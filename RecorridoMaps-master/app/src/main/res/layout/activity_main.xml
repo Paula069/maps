@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicaciones y Direcciones"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para mostrar la ubicación del Ibis Budget -->
+    <Button
+        android:id="@+id/button_show_location_ibis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Ibis Budget Bogotá Marly"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowLocationIbis"/>
+
+    <!-- Botón para mostrar la ubicación del Piqueteadero -->
+    <Button
+        android:id="@+id/button_show_location_piqueteadero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Piqueteadero Campestre El Pino"
+        android:layout_below="@id/button_show_location_ibis"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowLocationPiqueteadero"/>
+
+    <!-- Botón para mostrar la ubicación del Parque Principal Mosquera -->
+    <Button
+        android:id="@+id/button_show_location_mosquera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Parque Principal Mosquera"
+        android:layout_below="@id/button_show_location_piqueteadero"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowLocationMosquera"/>
+
+    <!-- Botón para obtener direcciones al Ibis Budget -->
+    <Button
+        android:id="@+id/button_show_directions_ibis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Budget Bogotá "
+        android:layout_below="@id/button_show_location_mosquera"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToIbis"/>
+
+    <!-- Botón para obtener direcciones al Piqueteadero -->
+    <Button
+        android:id="@+id/button_show_directions_piqueteadero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Piqueteadero Campestre El Pino"
+        android:layout_below="@id/button_show_directions_ibis"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToPiqueteadero"/>
+
+    <!-- Botón para obtener direcciones al Parque Principal Mosquera -->
+    <Button
+        android:id="@+id/button_show_directions_mosquera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Parque Principal Mosquera"
+        android:layout_below="@id/button_show_directions_piqueteadero"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToMosquera"/>
+
+    <!-- Botón para obtener direcciones a Zipaquirá -->
+    <Button
+        android:id="@+id/button_show_directions_zipaquira"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Zipaquirá"
+        android:layout_below="@id/button_show_directions_mosquera"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToZipaquira"/>
+
+    <!-- Botón para obtener direcciones a Bucaramanga -->
+    <Button
+        android:id="@+id/button_show_directions_bucaramanga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Bucaramanga"
+        android:layout_below="@id/button_show_directions_zipaquira"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToBucaramanga"/>
+
+    <!-- Botón para obtener direcciones a Madrid, España -->
+    <Button
+        android:id="@+id/button_show_directions_madrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Madrid, España"
+        android:layout_below="@id/button_show_directions_bucaramanga"
+        android:layout_marginBottom="10dp"
+        android:onClick="onShowDirectionsToMadrid"/>
+
+</RelativeLayout>
